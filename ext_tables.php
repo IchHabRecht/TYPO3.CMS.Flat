@@ -19,6 +19,10 @@ if (TYPO3_MODE == 'BE' || TYPO3_MODE == 'FE' && isset($GLOBALS['BE_USER'])) {
 	$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Template\\DocumentTemplate'] = array(
 		'className' => 'PHORAX\\Flat\\Template\\DocumentTemplate'
 	);
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Form\\FormEngine'] = array(
+		'className' => 'PHORAX\\Flat\\Form\\FormEngine'
+	);
+
 
 	# ToolbarItems
 	$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Toolbar\\LiveSearchToolbarItem'] = array(
